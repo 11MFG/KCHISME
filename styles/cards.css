@@ -1,0 +1,203 @@
+/* Estilos para el encabezado */
+header{
+    height: 130px;
+    position: absolute; 
+    width: 100%; /* Cubre todo el ancho de la página */
+    top: 0; /* Alinea el encabezado en la parte superior */
+    background-color: rgba(28, 41, 75, 0.9); /* Color de fondo con transparencia */
+    z-index: 20000; /* Asegura que el encabezado esté por encima del contenido*/
+    margin-left: 0;
+    margin-right: 0;
+}
+  
+  
+.encabezado {
+    background-color: #1C294B;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+  
+.encabezado h1 {
+    margin: 0;
+}
+  
+.encabezado nav ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.encabezado nav ul li {
+    display: inline;
+    margin-right: 80px; /* Aumentamos el margen derecho para separar elementos */
+    margin-left: 80px; /* Agregamos un margen izquierdo para espaciado */
+}
+  
+.encabezado nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative; /* Agregamos posición relativa para que funcionen las imágenes absolutas */
+    display: inline-block;
+    padding: 10px; /* Agregamos un poco de espacio para la imagen */
+}
+  
+.encabezado nav ul li a img {
+    width: 80px;
+    height: 80px;
+    position: absolute; /* Posición absoluta para las imágenes */
+    bottom: -80px;
+    right: 100px;
+    margin: 0;
+    left: 400px;
+    z-index: 1000; /* Asegura que el encabezado esté por encima del contenido*/
+  
+}
+  
+.logo {
+    position: absolute;
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    align-items: right; /* Ajusta la distancia desde la parte derecha */
+}
+
+.cards {
+    display: flex; /* Hace que las tarjetas estén en línea */
+    justify-content: space-between; /* Distribuye el espacio entre las tarjetas */
+    align-items: center;
+}
+
+figure  {
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    height: 490px;
+    width: 490px;
+    align-items: flex-start;
+}
+figure > * {
+    grid-area: 1/1;
+    transition: .4s;
+}
+figure figcaption {
+    display: grid;
+    align-items: end;
+    font-family: sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #0000;
+    padding: .75rem;
+    background: var(--c,rgba(230, 216, 216, 0.6));
+    clip-path: inset(0 var(--_i,100%) 0 0);
+    -webkit-mask:
+      linear-gradient(#000 0 0),
+      linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      -webkit-mask-clip: text, padding-box;
+    margin: -1px;
+}
+figure:hover figcaption{
+    --_i: -10%;
+}
+figure:hover img {
+    transform: scale(1.2);
+}
+@supports not (-webkit-mask-clip: text) {
+    figure figcaption {
+     
+     color: #0c0c0c;
+    }
+}
+  
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    background: #000A23;
+}
+.footer{
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue';
+}
+  
+.container{
+    align-items: center;
+    height: 100px;
+    background-color: #1C294B;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+}
+  
+.container::after{
+    content: '';
+    background-color: #E40280;
+    height: 60px;
+    width: 8px;
+    margin-left: 67%;
+    position: absolute;
+  
+}
+  
+  
+.container-formulario{
+    background-color: #0184A9;
+    width: 220px;
+    height: 50px;
+    margin-left: 30px;
+    display: flex;
+    padding: 10px;
+    border-radius: 23px;
+    box-shadow: 9px 9px 0px 0px #02537D;
+    position: absolute;
+}
+  
+.container-formulario::after{
+    content: '';
+    background-color: #02537D;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: -25px;
+    margin-left: -10px;
+    z-index: 1000;
+}
+  
+.formulario{
+    margin-top: -20px;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 25px;
+}
+  
+  
+  
+.redes a{
+    color: white;
+    text-decoration: none;
+    position: relative; /* Agregamos posición relativa para que funcionen las imágenes absolutas */
+    display: inline-block;
+    padding: 50px; /* Agregamos un poco de espacio para la imagen */
+}
+  
+.redes a img {
+    width: 80px;
+    height: 80px;
+    position: absolute; /* Posición absoluta para las imágenes */
+    bottom: -5px;
+    right: 200px;
+    margin: 0;
+    left: 1200px;
+    z-index: 1000; /* Asegura que el encabezado esté por encima del contenido*/
+}
+  
+  
+

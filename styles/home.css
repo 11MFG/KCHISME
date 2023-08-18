@@ -1,0 +1,170 @@
+
+/* Estilos para el encabezado */
+header{
+  height: 130px;
+  position: absolute; 
+  width: 100%; /* Cubre todo el ancho de la página */
+  top: 0; /* Alinea el encabezado en la parte superior */
+  background-color: rgba(28, 41, 75, 0.9); /* Color de fondo con transparencia */
+  z-index: 20000; /* Asegura que el encabezado esté por encima del contenido*/
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+.encabezado {
+  background-color: #1C294B;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.encabezado h1 {
+  margin: 0;
+}
+
+.encabezado nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.encabezado nav ul li {
+  display: inline;
+  margin-right: 80px; /* Aumentamos el margen derecho para separar elementos */
+  margin-left: 80px; /* Agregamos un margen izquierdo para espaciado */
+}
+
+.encabezado nav ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative; /* Agregamos posición relativa para que funcionen las imágenes absolutas */
+  display: inline-block;
+  padding: 10px; /* Agregamos un poco de espacio para la imagen */
+}
+
+.encabezado nav ul li a img {
+  width: 80px;
+  height: 80px;
+  position: absolute; /* Posición absoluta para las imágenes */
+  bottom: -80px;
+  right: 100px;
+  margin: 0;
+  left: 400px;
+  z-index: 1000; /* Asegura que el encabezado esté por encima del contenido*/
+
+}
+
+.logo {
+  position: absolute;
+  top: 10px; /* Ajusta la distancia desde la parte superior */
+  align-items: right; /* Ajusta la distancia desde la parte derecha */
+}
+/* Estilos para el bloque de banner */
+.banner {
+  background-color: #000A23; /* Color de fondo azul oscuro */
+  padding: 100px 0; /* Espaciado interno vertical */
+  text-align: center;
+  width: 100%;
+  height: 60%;
+  position: absolute;
+}
+
+.banner-content {
+  color: white; /* Color de texto blanco */
+}
+
+.banner-content h1 {
+  font-size: 148px; /* Tamaño de fuente grande */
+  margin: 0;
+  padding: 20px 0; /* Espaciado interno vertical */
+  font-family: 'Bebas Neue', sans-serif; /* Fuente específica */
+  top: 10px;
+  position: absolute; /* Coloca el título de forma absoluta */
+  top: 250px; /* Distancia desde la parte superior */
+  left: 50px; /* Distancia desde la izquierda */
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue';
+}
+
+.container{
+  align-items: center;
+  height: 100px;
+  background-color: #1C294B;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+}
+
+.container::after{
+  content: '';
+  background-color: #E40280;
+  height: 60px;
+  width: 8px;
+  margin-left: 67%;
+  position: absolute;
+
+}
+
+
+.container-formulario{
+  background-color: #0184A9;
+  width: 220px;
+  height: 50px;
+  margin-left: 30px;
+  display: flex;
+  padding: 10px;
+  border-radius: 23px;
+  box-shadow: 9px 9px 0px 0px #02537D;
+  position: absolute;
+}
+
+.container-formulario::after{
+  content: '';
+  background-color: #02537D;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: -25px;
+  margin-left: -10px;
+  z-index: 1000;
+}
+
+.formulario{
+  margin-top: -20px;
+  margin-left: 30px;
+  color: #fff;
+  font-size: 25px;
+}
+
+
+
+.redes a{
+  color: white;
+  text-decoration: none;
+  position: relative; /* Agregamos posición relativa para que funcionen las imágenes absolutas */
+  display: inline-block;
+  padding: 50px; /* Agregamos un poco de espacio para la imagen */
+}
+
+.redes a img {
+  width: 80px;
+  height: 80px;
+  position: absolute; /* Posición absoluta para las imágenes */
+  bottom: -5px;
+  right: 200px;
+  margin: 0;
+  left: 1200px;
+  z-index: 1000; /* Asegura que el encabezado esté por encima del contenido*/
+}
+
+
