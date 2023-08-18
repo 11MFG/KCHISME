@@ -65,7 +65,7 @@ header{
     align-items: center;
 }
 
-figure  {
+figure {
     display: grid;
     border-radius: 1rem;
     overflow: hidden;
@@ -73,11 +73,26 @@ figure  {
     height: 490px;
     width: 490px;
     align-items: flex-start;
+    position: relative; /* Añade posición relativa */
 }
+
 figure > * {
     grid-area: 1/1;
     transition: .4s;
 }
+
+/* Añade transición al enlace (<a>) */
+figure a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+figure img,
+figure a {
+    transition: transform .4s;
+}
+
 figure figcaption {
     display: grid;
     align-items: end;
@@ -95,19 +110,24 @@ figure figcaption {
       -webkit-mask-clip: text, padding-box;
     margin: -1px;
 }
-figure:hover figcaption{
+
+figure:hover figcaption {
     --_i: -10%;
 }
-figure:hover img {
+
+/* Añade transformación en hover a img y a */
+figure:hover img,
+figure:hover a {
     transform: scale(1.2);
 }
+
+/* Ajusta el color del texto si las máscaras no son compatibles */
 @supports not (-webkit-mask-clip: text) {
     figure figcaption {
-     
-     color: #0c0c0c;
+        color: #0c0c0c;
     }
 }
-  
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -116,6 +136,7 @@ body {
     place-content: center;
     background: #000A23;
 }
+
 .footer{
     position: absolute;
     bottom: -20px;

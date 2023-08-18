@@ -63,25 +63,72 @@ header{
 .banner {
   background-color: #000A23; /* Color de fondo azul oscuro */
   padding: 100px 0; /* Espaciado interno vertical */
-  text-align: center;
+  text-align: left;
   width: 100%;
   height: 60%;
   position: absolute;
 }
 
-.banner-content {
-  color: white; /* Color de texto blanco */
+.banner {
+  text-align: center;
 }
 
-.banner-content h1 {
-  font-size: 148px; /* Tamaño de fuente grande */
-  margin: 0;
-  padding: 20px 0; /* Espaciado interno vertical */
-  font-family: 'Bebas Neue', sans-serif; /* Fuente específica */
-  top: 10px;
-  position: absolute; /* Coloca el título de forma absoluta */
-  top: 250px; /* Distancia desde la parte superior */
-  left: 50px; /* Distancia desde la izquierda */
+.three-color-title h1 {
+  font-size: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.white-text,
+.red-text,
+.blue-text {
+  position: absolute;
+  top: 50px;
+  left: -800px;
+  z-index: 2;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 150px;
+}
+
+.white-text {
+  color: white;
+  z-index: 3;
+}
+
+.red-text {
+  color: rgb(172, 7, 150);
+  z-index: 2;
+  transform: translateY(5px);
+}
+
+.blue-text {
+  color: rgb(0, 0, 146);
+  z-index: 1;
+  transform: translateY(8px);
+}
+
+.descripcion {
+  background-color: #f3e8d6; /* Color hueso/crema */
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 200px;
+  width: 800px;
+  position: relative;
+  margin-left: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+  font-size: 30px;
+}
+
+.descripcion p {
+  margin: 0px;
+}
+
+.img{
+  height: 200px;
+  margin-top: -450px;
+  margin-left:900px;
 }
 
 .footer{
