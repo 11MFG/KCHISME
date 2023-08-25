@@ -224,20 +224,28 @@ hr {
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
+
 }
 
 .references h3 {
-  font-size: 24px;
+  font-size: 34px;
   margin-bottom: 10px;
+
 }
 
 .references ul {
   list-style: disc;
   margin-left: 20px;
+  color: #ffff;
 }
 
 .references li {
   margin-bottom: 8px;
+  color: #fff;
+}
+.references h3,
+.references a {
+  color: white;
 }
 
 .demas {
