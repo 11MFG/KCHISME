@@ -1,46 +1,207 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #021f66;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  form {
-    width: 80%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px rgb(255, 0, 0);
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #000A23;
-    border-radius: 3px;
-  }
-  
-  input[type="submit"] {
-    background-color: #141a66;
-    color: #000A23;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 3px;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000A23;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cosita {
+  margin-top: 260px; 
+}
+
+
+form {
+  bottom: -400px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgb(255, 0, 0);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000A23;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #1C294B;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Esto ocultará cualquier desbordamiento horizontal */
+}
+/* Estilos para el encabezado */
+header{
+  height: 130px;
+  position: absolute; 
+  width: 100%; /* Cubre todo el ancho de la página */
+  top: 0; /* Alinea el encabezado en la parte superior */
+  background-color: rgba(28, 41, 75, 0.9); /* Color de fondo con transparencia */
+  z-index: 20000; /* Asegura que el encabezado esté por encima del contenido*/
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+.encabezado {
+  background-color: #1C294B;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.encabezado h1 {
+  margin: 0;
+}
+
+.encabezado nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.encabezado nav ul li {
+  display: inline;
+  margin-right: 80px; /* Aumentamos el margen derecho para separar elementos */
+  margin-left: 80px; /* Agregamos un margen izquierdo para espaciado */
+}
+
+.encabezado nav ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative; /* Agregamos posición relativa para que funcionen las imágenes absolutas */
+  display: inline-block;
+  padding: 10px; /* Agregamos un poco de espacio para la imagen */
+}
+
+.encabezado nav ul li a img {
+  width: 80px;
+  height: 80px;
+  position: absolute; /* Posición absoluta para las imágenes */
+  bottom: -80px;
+  right: 100px;
+  margin: 0;
+  left: 400px;
+  z-index: 1000; /* Asegura que el encabezado esté por encima del contenido*/
+
+}
+
+.logo {
+  position: absolute;
+  top: 10px; /* Ajusta la distancia desde la parte superior */
+  align-items: right; /* Ajusta la distancia desde la parte derecha */
+}
+.footer{
+  position: absolute;
+  bottom: -180px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue';
+}
+
+.container {
+  align-items: center;
+  height: 100px;
+  background-color: #1C294B;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+  position: relative; /* Agregamos posición relativa para que funcione ::after */
+}
+
+.container::after {
+  content: '';
+  background-color: #E40280;
+  height: 60px;
+  width: 8px;
+  margin-left: 67%;
+  position: absolute;
+  top: 0; /* Ajustamos la posición superior */
+  right: -8px; /* Ajustamos la posición derecha */
+}
+
+.container-formulario {
+  background-color: #0184A9;
+  width: 220px;
+  height: 50px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center; /* Centramos verticalmente el contenido */
+  padding: 10px;
+  border-radius: 23px;
+  box-shadow: 9px 9px 0px 0px #02537D;
+  position: relative; /* Cambiamos a posición relativa */
+  z-index: 1;
+}
+
+.container-formulario::after {
+  content: '';
+  background-color: #02537D;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%; /* Centramos verticalmente */
+  right: -25px; /* Ajustamos la posición derecha */
+  transform: translateY(-50%); /* Centramos verticalmente usando transform */
+  z-index: 1000;
+}
+
+.formulario {
+  margin-top: -20px;
+  margin-left: 30px;
+  color: #fff;
+  font-size: 25px;
+}
+.formulario p {
+  color:#fff;
+  margin-bottom: 10px;
+}
+.redes {
+  display: flex; /* Usamos flexbox para alinear los elementos */
+}
+
+.redes a {
+  color: white;
+  text-decoration: none;
+  display: flex; /* Utilizamos flex para alinear imagen e icono verticalmente */
+  align-items: center; /* Centramos verticalmente los contenidos */
+  margin-right: 20px; /* Agregamos espacio entre los elementos */
+}
+
+.redes a img {
+  width: 80px; /* Reducimos el tamaño de las imágenes */
+  height: 80px;
+  margin-right: 10px; /* Agregamos espacio entre la imagen y el icono */
+}
+
+.redes i {
+  font-size: 20px; /* Ajustamos el tamaño del ícono */
+}

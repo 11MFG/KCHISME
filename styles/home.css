@@ -176,7 +176,7 @@ header{
 }
 
 
-.container{
+.container {
   align-items: center;
   height: 100px;
   background-color: #1C294B;
@@ -184,70 +184,80 @@ header{
   justify-content: space-between;
   padding: 20px;
   color: #fff;
-
+  position: relative; /* Agregamos posición relativa para que funcione ::after */
 }
 
-.container::after{
+.container::after {
   content: '';
   background-color: #E40280;
   height: 60px;
   width: 8px;
   margin-left: 67%;
   position: absolute;
-
+  top: 0; /* Ajustamos la posición superior */
+  right: -8px; /* Ajustamos la posición derecha */
 }
 
-
-.container-formulario{
+.container-formulario {
   background-color: #0184A9;
   width: 220px;
   height: 50px;
   margin-left: 30px;
   display: flex;
+  align-items: center; /* Centramos verticalmente el contenido */
   padding: 10px;
   border-radius: 23px;
   box-shadow: 9px 9px 0px 0px #02537D;
-  position: absolute;
+  position: relative; /* Cambiamos a posición relativa */
+  z-index: 1;
 }
 
-.container-formulario::after{
+.container-formulario::after {
   content: '';
   background-color: #02537D;
   height: 50px;
   width: 50px;
   position: absolute;
   border-radius: 50%;
-  margin-top: -25px;
-  margin-left: -10px;
+  top: 50%; /* Centramos verticalmente */
+  right: -25px; /* Ajustamos la posición derecha */
+  transform: translateY(-50%); /* Centramos verticalmente usando transform */
   z-index: 1000;
 }
 
-.formulario{
+.formulario {
   margin-top: -20px;
   margin-left: 30px;
   color: #fff;
   font-size: 25px;
 }
+.formulario p {
+  color:#fff;
+  margin-bottom: 10px;
+}
+.redes {
+  display: flex; /* Usamos flexbox para alinear los elementos */
+}
 
-
-
-.redes a{
+.redes a {
   color: white;
   text-decoration: none;
-  position: relative; /* Agregamos posición relativa para que funcionen las imágenes absolutas */
-  display: inline-block;
-  padding: 50px; /* Agregamos un poco de espacio para la imagen */
+  display: flex; /* Utilizamos flex para alinear imagen e icono verticalmente */
+  align-items: center; /* Centramos verticalmente los contenidos */
+  margin-right: 20px; /* Agregamos espacio entre los elementos */
 }
 
 .redes a img {
-  width: 80px;
+  width: 80px; /* Reducimos el tamaño de las imágenes */
   height: 80px;
-  position: absolute; /* Posición absoluta para las imágenes */
-  bottom: -5px;
-  right: 200px;
-  margin: 0;
-  left: 1200px;
-  z-index: 1000; /* Asegura que el encabezado esté por encima del contenido*/
+  margin-right: 10px; /* Agregamos espacio entre la imagen y el icono */
 }
+
+.redes i {
+  font-size: 20px; /* Ajustamos el tamaño del ícono */
+}
+
+
+
 
 
