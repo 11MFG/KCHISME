@@ -1,18 +1,16 @@
 /* Estilos generales */
 
-/* Media query para dispositivos pequeños, como smartphones en orientación vertical */
-@media (max-width: 480px) {
-  /* Ajusta aquí los estilos según tus necesidades */
-}
-  
-  /* Media query para dispositivos medianos, como smartphones en orientación horizontal y tablets */
-@media (min-width: 481px) and (max-width: 1024px) {
-  /* Ajusta aquí los estilos según tus necesidades */
-}
-  
-/* Media query para dispositivos grandes, como tablets en orientación horizontal y computadoras de escritorio */
-@media (min-width: 1025px) {
-/* Ajusta aquí los estilos según tus necesidades */
+/* Media Query para dispositivos móviles */
+
+@media (max-width: 768px) {
+  header, nav, main, footer {
+      padding: 10px;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 5px 0;
+  }
 }
 
 body {
