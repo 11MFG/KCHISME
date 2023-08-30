@@ -8,15 +8,16 @@ body {
 h2 {
   text-align: center;
   margin-top: 20px;
+  color:#fff;
 }
 
-.cosita {
+.form-content {
   margin-top: 260px; 
 }
 
 
 form {
-  bottom: -400px;
+  bottom: -1000px;
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
